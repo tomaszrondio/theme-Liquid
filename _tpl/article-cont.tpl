@@ -13,7 +13,11 @@
 
 
      <div class="content content_text">
+
        <h6 class="info">{{ $gimme->article->publish_date|camp_date_format:"%d.%m.%Y, %H:%i" }}</h6>
+       <div class="catchline">
+         {{$gimme->article->catchline}}
+       </div>
         <h2 class="title">{{$gimme->article->name}}</h2>
         <h6 class="topics">
           {{strip}}
